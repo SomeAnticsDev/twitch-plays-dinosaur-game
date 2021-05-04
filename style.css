@@ -1,0 +1,38 @@
+#game {
+	width: 600px;
+	height: 200px;
+	background-color: #1c0929;
+	position: relative;
+}
+
+#dinosaur {
+	height: 50px;
+	width: 50px;
+	background-color: #ee4433;
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	transition: all 0.7s ease-in-out;
+}
+
+#dinosaur.jumping {
+	top: 60px;
+}
+
+#cactus {
+	width: 25px;
+	height: 40px;
+	background-color: #eed043;
+	position: absolute;
+	left: 600px;
+	top: 160px;
+	animation-name: cactus;
+	animation-duration: 4.49s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes cactus {
+	from {left: 600px;}
+	to {left: -25px;}
+}
