@@ -5,8 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Twitch Plays the Dinosaur Game</title>
+	<link href="style.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
 </head>
 <body>
-
+	<script src="game.js"></script>
+	<div id="game">
+		<div id="dinosaur"></div>
+	</div>
+	<script>
+		ComfyJS.onCommand = (user, command, message, flags, extra) => {
+			if (command === 'jump') {
+				jump();
+			}
+		}
+		ComfyJS.Init('SomeAnticsDev');
+	</script>
 </body>
 </html>
